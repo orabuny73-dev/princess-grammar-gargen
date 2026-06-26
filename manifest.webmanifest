@@ -1,7 +1,7 @@
 {
-  "name": "Princess Grammar Garden",
+  "name": "Princess Grammar Garden Deluxe",
   "short_name": "GrammarGarden",
-  "description": "Personal princess-themed English grammar game for kids.",
+  "description": "Personal princess-themed English grammar game.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

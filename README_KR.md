@@ -1,25 +1,26 @@
-# Princess Grammar Garden v4 — PWA Installable Personal Version
+# Princess Grammar Garden v5 Deluxe
 
-세아 개인용 영어 문법 게임입니다. 상용 앱스토어 배포가 아니라, 스마트폰 홈 화면에 설치해서 쓰는 PWA 방식입니다.
+## 핵심 업그레이드
+- Sia 이름 발음 보정: 화면에는 Sia, 음성은 See-ah로 읽음
+- v4보다 나은 SVG 공주/궁전/문법방 그래픽 추가
+- MP3 음성 우선 재생 구조 추가
+- MP3가 없으면 브라우저 TTS fallback
+- PWA 설치형 구조 유지
+- 단어풀: 총 고유 단어 약 875개
+- 라운드 10문제 / 7개 이상 클리어
 
-## v4 업그레이드
-- 스마트폰 홈 화면 설치용 PWA 구조 추가
-- manifest / service worker / app icon 추가
-- 오프라인 캐시 구조 추가
-- 초등 기본 수준 단어풀 확장
-- 각 라운드 10문제, 7개 이상 맞추면 클리어
-- 총 고유 단어 약 932개
-- 진행률/보석/별 저장
+## 사람 같은 공주 목소리로 바꾸는 방법
+`audio` 폴더에 아래 파일명을 가진 MP3를 넣으면 브라우저 TTS 대신 MP3가 먼저 재생됩니다.
 
-## PC 테스트
-`index.html`을 더블클릭하면 PC 브라우저에서 바로 확인할 수 있습니다.
+- hello.mp3
+- wonderful.mp3
+- try_again.mp3
+- room_cleared.mp3
+- palace_unlocked.mp3
+
+현재 패키지에는 실제 MP3 음성 파일은 포함되어 있지 않습니다. 대신 구조는 이미 준비되어 있습니다.
 
 ## 스마트폰 설치
-PWA 설치는 보통 `file://`로 직접 열면 제한이 있습니다. 스마트폰 홈 화면에 설치하려면 이 폴더 전체를 HTTPS 웹공간에 올려야 합니다.
-
-방법:
-1. ZIP 압축을 풉니다.
-2. 폴더 전체를 GitHub Pages, Netlify, Vercel 같은 정적 호스팅에 업로드합니다.
-3. 스마트폰에서 주소를 엽니다.
-4. Android Chrome: Install app 또는 Add to Home screen
-5. iPhone Safari: Share → Add to Home Screen
+GitHub Pages / Netlify / Vercel 같은 HTTPS 정적 호스팅에 폴더 전체를 올린 뒤:
+- Android Chrome: Install app
+- iPhone Safari: Share → Add to Home Screen
